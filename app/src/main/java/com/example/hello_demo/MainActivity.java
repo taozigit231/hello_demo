@@ -170,6 +170,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void goToNextLevel() {
         // Show the next level and reload the ad to prepare for the level after.
+        int level = 10;
         mLevelTextView.setText("Level " + (++mLevel));
         if (mInterstitialAd == null) {
             loadInterstitialAd();
